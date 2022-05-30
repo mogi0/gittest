@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>외부 자바스크립트 연동</title>
+    <script src="example.js"></script>
+    <br>
+        <script>
+            var num = 100;
+            var str = "자바스크립트";
+            document.write(typeof num, "<br>");
+            document.write(typeof str);
+        </script>
+    <br><br>
+    <script>
+        var num1 = 15;
+        var num2 = 2;
+        var result;
+        result = num1 + num2;
+        document.write(result,"<br>");//17
+        result = num1 - num2;
+        document.write(result,"<br>");// 13
+    </script>
+    <br><br>
+    <script>
+        var num1 = 10;
+        var num2 = 3;
+        num1 +=num2; // num1 = num1(10)+num2(3)
+        document.write(num1,"<br>"); // 13
+        
+        num1 +=num2; // num1 = num1(13)+num2(3)
+        document.write(num1,"<br>"); // 16
+        </script>
+    <br><br>
+        <script>
+        var str="<table border='1'>";
+        str +="<tr>";
+        str +="<td>1</td><td>2</td><td>3</td>";
+        str +="</tr>";
+        str +="</table>";
+        document.write(str);
+        </script>
+    <h1>weight</h1>
+    <script>
+        var height= 180;
+        var weigth= 74;
+
+        var normal_w = (height-100)*0.9;
+        document.write(normal_w);
+    </script>
+
+    <script>
+        var userName = prompt("방문자의 이름은?","");
+        
+        if(userName){
+            document.write(userName+"방문을 환영합니다");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
